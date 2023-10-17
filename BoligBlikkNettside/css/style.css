@@ -51,9 +51,10 @@ body {
 
 .navbar ul li {
     list-style: none;
-    display: inline-block;
+    display: flex;
     margin: 0 1rem;
     position: relative;
+    align-items: center;
 }
 
 
@@ -77,6 +78,16 @@ body {
 }
 
 .navbar ul li:hover:after {
+    width: 100%;
+}
+
+/* Style the active link and its line */
+.navbar ul li.active {
+    font-weight: bold; /* You can add other styles as needed */
+
+}
+
+.navbar ul li.active::after {
     width: 100%;
 }
 
@@ -117,7 +128,7 @@ body {
 }
 
 .tittel {
-    margin-top: -3%;
+    margin-top: -2vw;;
 }
 
 /* Homepage buttons */
@@ -230,7 +241,7 @@ button:hover span {
 }
 
 .ansatt p {
-    margin: 5px 0;
+    margin: 1px 0;
 }
 
 .ansattBilde {
@@ -320,7 +331,7 @@ input[type=text], select, textarea {
   }
 
   /* 1560px */
-  @media only screen and (max-width: 1560px) {
+  @media only screen and (max-width: 1530px) {
     .navbar {
         justify-content: space-around;
         margin: 0;
