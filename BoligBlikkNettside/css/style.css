@@ -38,10 +38,19 @@ body {
     object-fit: contain;
 }
 
-.logoContainer {
+.navbar .logoContainer {
     height: 100%;
     width: 30%;
     margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logoContainer a {
+    height: 100%;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul {
@@ -83,8 +92,7 @@ body {
 
 /* Style the active link and its line */
 .navbar ul li.active {
-    font-weight: bold; /* You can add other styles as needed */
-
+    font-weight: bold;
 }
 
 .navbar ul li.active::after {
@@ -171,39 +179,59 @@ button:hover span {
     margin: 1rem 5rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    padding: 0.1rem 1rem;
-    max-width: 70%;
-    min-width: 95%;
     backdrop-filter: blur(5px);
+    box-shadow: 0 1px 6px rgba(97, 105, 114, 0.15);
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.beskrivelse p {
+    padding: 0.1rem 1rem;
 }
 
 .produktBilder {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .produktBildeTekst {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 1vw;
-    padding: 15px;
+    padding: 1rem 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50px;
     margin-bottom: 1rem;
     max-width: 8630;
     backdrop-filter: blur(5px);
+    box-shadow: 0 1px 6px rgba(97, 105, 114, 0.15);
+    margin: 1vh 0.4vw;
+}
+
+span {
+    margin: 0 10px;
+}
+
+span:first-of-type {
+    margin-left: 0;
+}
+
+span:last-of-type {
+    margin-right: 0;
 }
 
 .produktBildeTekst p {
-    margin: 1vw;
+    margin: 0.5vw;
 }
 
 .produktBilde {
     max-height: 400px;
     max-width: 200px;
-    width: auto;
+    width: 100%;
     border-radius: 30px;
 }
 
@@ -213,12 +241,11 @@ button:hover span {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50px;
     padding: 15px;
-    max-width: auto;
     display: flex;
     flex-direction: column;
-    max-width: 70%;
-    min-width: 95%;
+    width: 100%;
     backdrop-filter: blur(5px);
+    box-shadow: 0 1px 6px rgba(97, 105, 114, 0.15);
 }
 
 .ansatte1 {
@@ -265,7 +292,7 @@ input[type=text], select, textarea {
     color: black;
   }
 
-  .beskrivelseKontakt {
+.beskrivelseKontakt {
     margin: 1rem 5rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
@@ -273,10 +300,10 @@ input[type=text], select, textarea {
     max-width: 910px;
     width: 96%;
     backdrop-filter: blur(5px);
+    box-shadow: 0 1px 6px rgba(97, 105, 114, 0.15);
 }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -284,15 +311,14 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-  }
+}
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
   
-  /* Add a background color and some padding around the form */
-  .container {
+
+.container {
     margin-top: 1%;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -305,42 +331,139 @@ input[type=text], select, textarea {
     width: 94%;
     max-width: 900px;
     backdrop-filter: blur(5px);
-  }
+    box-shadow: 0 1px 6px rgba(97, 105, 114, 0.15);
+}
 
-  form, textarea, input {
+form, textarea, input {
     text-align: left;
-  }
+}
   
 
 /* Scrollbar */
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #181818;
-  }
+}
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 50px;
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #555;
     border-radius: 50px;
-  }
+}
+
+
+/* Navigation Phone */
+.navbarPhone {
+    height: 12vh;
+    display: none;
+    justify-content: space-between;
+    background-color: rgb(11, 13, 15);
+    width: 100%;
+    box-shadow: 0 1px 6px rgba(97, 105, 114, 0.2);
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+
+.navbarPhone .logoContainer {
+    padding-left: 55px;
+    padding-top: 0.6vh;
+}
+
+.navbarPhone .logoContainer a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logoPhone {
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.hamburgerImg {
+    max-height: 65%;
+    object-fit: contain;
+}
+
+.navbarPhone .hamburger {
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbarPhone .hamburger:hover {
+    background-color: rgba(22, 29, 36, 0.8);
+}
+
+.navigationPhone {
+    height: 0;
+    visibility: hidden;
+    width: 100%;
+    background-color: rgb(15, 17, 19, 0.98);
+    backdrop-filter: blur(10px);
+    transition: height 0.3s, visibility 0.1s;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5vh;
+    position: absolute;
+    top: 12vh;
+    z-index: 2;
+}
+
+.navigationPhone ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navigationPhone ul li{
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid;
+    border-width: 0.1rem;
+    border-color: rgb(51, 51, 51);
+}
+
+.navigationPhone ul li a {
+    width: 80%;
+    height: 60%;
+    padding: auto;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.navigationPhone ul li.active {
+}
 
 
 /* Phone screens */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .navbar {
         justify-content: space-around;
         margin: 0;
+        display: none;
     }
 
     .navbar ul {
@@ -364,21 +487,38 @@ input[type=text], select, textarea {
         width: 40%;
     }
 
-    .produktBildeTekst {
-        max-width: 90%;
+    .content {
+        min-height: 88vh;
     }
-    
+
+    .navigationPhone {
+        display: flex;
+    }
+
+    .navigationPhone {
+        height: 0;
+        visibility:hidden
+    }
+
+    .navigationPhone.active {
+        height: 65vh;
+        visibility: visible;
+    }
+
+    .navbarPhone {
+        display: flex;
+    }
   }
 
-  /* 1560px */
-  @media only screen and (max-width: 1530px) {
+
+  /* Mindre skjerm */
+  @media only screen and (max-width: 1430px) {
     .navbar {
         justify-content: space-around;
         margin: 0;
     }
 
     .produktBilder {
-        display: flex;
         flex-direction: column;
     }
 
@@ -389,5 +529,4 @@ input[type=text], select, textarea {
     .tittel {
         margin-top: 3vh;
     }
- 
   }
