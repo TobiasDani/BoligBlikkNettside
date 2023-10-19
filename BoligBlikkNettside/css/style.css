@@ -202,6 +202,7 @@ button:hover span {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50px;
@@ -210,6 +211,21 @@ button:hover span {
     backdrop-filter: blur(5px);
     box-shadow: 0 1px 6px rgba(97, 105, 114, 0.15);
     margin: 1vh 0.4vw;
+    min-height: 300px;
+    max-height: 400px;
+    height: 25vw;
+}
+
+.produktTekst {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: calc(10px);
+    overflow: auto;
+}
+
+.produktTekst p{
+    max-height: 100%;
 }
 
 span {
@@ -224,14 +240,8 @@ span:last-of-type {
     margin-right: 0;
 }
 
-.produktBildeTekst p {
-    margin: 0.5vw;
-}
-
 .produktBilde {
-    max-height: 400px;
-    max-width: 200px;
-    width: 100%;
+    height: 100%;
     border-radius: 30px;
 }
 
@@ -442,7 +452,7 @@ form, textarea, input {
 
 .navigationPhone ul li a {
     width: 80%;
-    height: 60%;
+    height: 70%;
     padding: auto;
     text-decoration: none;
     color: #fff;
@@ -512,7 +522,7 @@ form, textarea, input {
 
 
   /* Mindre skjerm */
-  @media only screen and (max-width: 1430px) {
+  @media only screen and (max-width: 1250px) {
     .navbar {
         justify-content: space-around;
         margin: 0;
