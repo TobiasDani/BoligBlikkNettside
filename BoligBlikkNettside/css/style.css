@@ -92,7 +92,6 @@ body {
 
 /* Style the active link and its line */
 .navbar ul li.active {
-    font-weight: bold;
 }
 
 .navbar ul li.active::after {
