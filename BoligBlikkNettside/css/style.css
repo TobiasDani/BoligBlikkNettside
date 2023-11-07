@@ -172,6 +172,53 @@ button:hover span {
     width: 100%;
 }
 
+.app {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.appContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.appContentLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrCode {
+    height: 190px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.appContentRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appContentRight a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 15px;
+}
+
+.getApp {
+    height: 100%;
+}
+
 
 /* Content produkter */
 .beskrivelse {
@@ -249,7 +296,7 @@ span:last-of-type {
 }
 
 .produktBilde2 {
-    margin-right: -1.5%;
+    margin-right: -0.5%;
 }
 
 .produktBilde3 {
