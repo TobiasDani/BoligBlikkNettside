@@ -461,7 +461,7 @@ form, textarea, input {
 }
 
 .hamburgerImg {
-    max-height: 65%;
+    max-height: 9vh;
     object-fit: contain;
 }
 
