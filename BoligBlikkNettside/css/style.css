@@ -528,6 +528,26 @@ form, textarea, input {
 .navigationPhone ul li.active {
 }
 
+  /* Mindre skjerm */
+  @media only screen and (max-width: 1430px) {
+    .navbar {
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .produktBilder {
+        flex-direction: column;
+    }
+
+    .produktBildeTekst {
+        border-radius: 30px;
+    }
+
+    .tittel {
+        margin-top: 3vh;
+    }
+  }
+
 
 /* Phone screens */
   @media only screen and (max-width: 768px) {
@@ -616,25 +636,24 @@ form, textarea, input {
     .appContent {
         flex-direction: column;
     }    
-  }
 
-
-  /* Mindre skjerm */
-  @media only screen and (max-width: 1430px) {
-    .navbar {
-        justify-content: space-around;
-        margin: 0;
+    .ansatte1 {
+        display: flex;
+        flex-direction: column;
     }
-
-    .produktBilder {
+    
+    .ansatte2 {
+        display: flex;
         flex-direction: column;
     }
 
-    .produktBildeTekst {
-        border-radius: 30px;
+    .ansatt {
+        margin: 2vh 0;
     }
 
-    .tittel {
-        margin-top: 3vh;
+    .ansattBilde {
+        width: 50%;
     }
-  }
+}
+
+
